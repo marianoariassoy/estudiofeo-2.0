@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="uuid-398e2fd1-c7ff-4078-93dc-5d07ea76539a" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="63.9mm" height="70.9mm" viewBox="0 0 181 201">
+  <defs>
+    <style>
+      .uuid-7dfb9abc-f668-49b4-ba66-4524d016e84b {
+        fill: none;
+        stroke: #1d1d1b;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g id="uuid-aef3dee0-04dd-477c-bd6c-6df126c492f8" data-name="Capa 2">
+    <g id="uuid-933dd609-d863-485d-ac5a-d542efd7792e" data-name="ARC">
+      <path class="uuid-7dfb9abc-f668-49b4-ba66-4524d016e84b" d="M30.4,200.5H.5V.5H30.4c0,33.2,26.9,60.1,60.1,60.1S150.6,33.7,150.6,.5h29.9V200.5h-29.9c0-33.2-26.9-60.1-60.1-60.1s-60.1,26.9-60.1,60.1Z"/>
+    </g>
+  </g>
+</svg>

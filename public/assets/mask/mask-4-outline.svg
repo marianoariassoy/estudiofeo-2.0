@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="uuid-595c5ea1-b5cc-4f3e-afe1-b716979ba62c" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="42mm" height="70.9mm" viewBox="0 0 119 201">
+  <defs>
+    <style>
+      .uuid-332629bf-1a2f-4d6f-89bd-bf5a10cbab14 {
+        stroke-dasharray: 0 0 28.9 28.9;
+      }
+
+      .uuid-332629bf-1a2f-4d6f-89bd-bf5a10cbab14, .uuid-ef5e43f7-55fc-4019-a20e-4acb7980efa1, .uuid-72a3d27b-a9d9-47c4-891d-0e5a8448cbbf {
+        fill: none;
+        stroke: #1d1d1b;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .uuid-ef5e43f7-55fc-4019-a20e-4acb7980efa1 {
+        stroke-dasharray: 0 0 20 20;
+      }
+    </style>
+  </defs>
+  <g id="uuid-ac72550b-abc1-43c4-8eda-6e1454b1f0aa" data-name="Capa 2">
+    <g id="uuid-e9c398eb-7d8a-4306-99e4-558f6dedfa30" data-name="LWPOLYLINE">
+      <g>
+        <polyline class="uuid-72a3d27b-a9d9-47c4-891d-0e5a8448cbbf" points=".5 130.5 .5 145 11.6 154.3"/>
+        <path class="uuid-332629bf-1a2f-4d6f-89bd-bf5a10cbab14" d="M33.6,173.1l19.6,16.6c15.3,14.8,39.7,14.4,54.5-.9,14.8-15.3,14.4-39.7-.9-54.5-1.5-1.4-3.1-2.7-4.7-3.9-3.5-2.5-6.6-5.5-9-9-11.5-16.5-7.4-39.1,9-50.6,17.5-12.2,21.8-36.2,9.6-53.7C99.4-.5,75.4-4.7,57.9,7.4c-1.7,1.2-3.3,2.5-4.7,3.9l-30.6,26"/>
+        <polyline class="uuid-72a3d27b-a9d9-47c4-891d-0e5a8448cbbf" points="11.6 46.7 .5 56.1 .5 70.6"/>
+        <line class="uuid-ef5e43f7-55fc-4019-a20e-4acb7980efa1" x1=".5" y1="90.5" x2=".5" y2="120.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+.nav {
+  top: -100vh;
+}
+.nav.active {
+  top: 0;
+  transition: all 0.4s ease;
+}
+.menu-link {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  &:hover {
+    color: black;
+  }
+}
+.nav-active {
+  color: black;
+}
+.active {
+  color: black;
+}

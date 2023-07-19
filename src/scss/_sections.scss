@@ -1,0 +1,131 @@
+.slider-home {
+  height: 70vh;
+}
+
+.indicators {
+  li {
+    margin: 0 0.25rem !important;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.btn {
+  &:hover {
+    color: black;
+    background-color: transparent;
+    border: 2px solid black;
+  }
+}
+
+.text-6xl {
+  @media (max-width: 980px) {
+    font-size: 3rem;
+  }
+}
+
+.item-mask {
+  cursor: pointer;
+  white-space: normal;
+  margin-right: 3rem;
+
+  &:hover {
+    .item-mask-image {
+      opacity: 0;
+    }
+    .item-mask-txt {
+      opacity: 1;
+    }
+  }
+}
+
+.mask {
+  height: 200px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  mask-position: top;
+}
+.mask-1 {
+  mask-image: url("/assets/mask/mask-1.svg");
+}
+.mask-2 {
+  mask-image: url("/assets/mask/mask-2.svg");
+}
+.mask-3 {
+  mask-image: url("/assets/mask/mask-3.svg");
+}
+.mask-4 {
+  mask-image: url("/assets/mask/mask-4.svg");
+}
+.mask-5 {
+  mask-image: url("/assets/mask/mask-5.svg");
+}
+.mask-6 {
+  mask-image: url("/assets/mask/mask-6.svg");
+}
+
+.galeria-item {
+  height: 70vh;
+  @media (max-width: 980px) {
+    height: auto;
+  }
+}
+
+.items-container-main {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  min-height: 280px;
+  align-items: flex-start;
+  .items-container {
+    display: inline-block;
+  }
+}
+
+.galeria-container {
+  min-height: 280px;
+}
+
+.px-16 {
+  @media (max-width: 980px) {
+    padding-right: 2.5rem !important;
+    padding-left: 2.5rem !important;
+  }
+}
+
+.post-col-left {
+  width: 350px;
+  @media (max-width: 980px) {
+    width: 100%;
+  }
+}
+.post-col-right {
+  width: calc(100vw - 370px);
+  @media (max-width: 980px) {
+    width: 100%;
+  }
+}
+
+.item-loader {
+  height: 200px;
+}
+
+.loader-full-img {
+  min-height: 30vh;
+}
+
+.mask-outline {
+  height: 180px;
+}

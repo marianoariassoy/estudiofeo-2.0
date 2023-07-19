@@ -1,0 +1,63 @@
+html,
+body {
+  accent-color: #fff;
+  color: $text-color-primary;
+  font-family: $font-main;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 980px) {
+    font-size: 13px;
+  }
+}
+
+//Links
+a {
+  color: $text-color-primary;
+}
+.link-primary {
+  color: $color-primary;
+}
+
+//Fonts
+.font-primary {
+  font-family: $font-main;
+}
+.font-light {
+  font-weight: 300;
+  font-family: "Standerd Light";
+}
+.font-medium {
+  font-weight: 500;
+  font-family: "Standerd Medium";
+}
+.font-bold {
+  font-weight: bold;
+  font-family: "Standerd Bold";
+}
+.font-extrabold {
+  font-weight: bold;
+  font-family: "Standerd ExtraBold";
+}
+.font-extra {
+  font-family: "Brodaers Expanded Round";
+}
+.font-extraitalic {
+  font-family: "Bodoni Moda";
+  font-style: italic;
+}
+
+.text-secondary {
+  color: #c6b5d2;
+}
+.bg-secondary {
+  background-color: #f7f7f7;
+}
+.bg-white {
+  background-color: white !important;
+}
+
+.text-outline {
+  color: #f7f7f7;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="uuid-29f5d592-c5c8-4280-8692-5d26d03c08a4" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="39.9mm" height="70.6mm" viewBox="0 0 113 200">
+  <defs>
+    <style>
+      .uuid-89dd88fb-9f1c-43c0-a8b1-4c2eaa3eb1cb {
+        fill: #1d1d1b;
+      }
+    </style>
+  </defs>
+  <g id="uuid-51b6651a-62be-44f4-8e4f-04521978d9d6" data-name="Capa 2">
+    <g id="uuid-fe2286cb-fdfb-49ee-a7ff-b55b9d9f2bc1" data-name="LINE">
+      <polygon class="uuid-89dd88fb-9f1c-43c0-a8b1-4c2eaa3eb1cb" points="113 108.3 113 91.7 96.3 91.7 96.3 75 113 75 113 58.3 96.3 58.3 96.3 0 0 0 0 200 96.3 200 96.3 141.7 113 141.7 113 125 96.3 125 96.3 108.3 113 108.3"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="uuid-3603372d-bca3-4bc2-8109-d3268bbcd661" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49">
+  <g id="uuid-b244fb0a-cac9-408a-b31d-8b6aad7d6f07" data-name="Capa 1">
+    <g>
+      <circle cx="24.5" cy="24.5" r="24" style="fill: none; stroke: #000; stroke-miterlimit: 10;"/>
+      <path d="M17.5,24v-7.7c0-1.8,1.9-2.8,3.4-2l6.6,3.8,6.6,3.8c1.5,.9,1.5,3.1,0,3.9l-6.6,3.8-6.6,3.8c-1.5,.9-3.4-.2-3.4-2v-7.7Z" style="fill: none; stroke: #000; stroke-miterlimit: 10;"/>
+    </g>
+  </g>
+</svg>

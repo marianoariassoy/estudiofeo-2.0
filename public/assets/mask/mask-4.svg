@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="uuid-2db2f9cb-1c46-45ce-ac8e-657315175913" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="41.6mm" height="70.6mm" viewBox="0 0 118 200">
+  <defs>
+    <style>
+      .uuid-2fde93f4-8f75-4b8d-aa01-381f8a50ce2a {
+        fill: #1d1d1b;
+      }
+    </style>
+  </defs>
+  <g id="uuid-2092ae9a-13ae-4c1c-9aa7-03f56b7ecd29" data-name="Capa 2">
+    <g id="uuid-6b9e8d6a-c0bd-4750-96b4-d92e1d4d1a36" data-name="LWPOLYLINE">
+      <path class="uuid-2fde93f4-8f75-4b8d-aa01-381f8a50ce2a" d="M0,144.5l52.6,44.7c15.3,14.8,39.7,14.4,54.5-.9,14.8-15.3,14.4-39.7-.9-54.5-1.5-1.4-3.1-2.7-4.7-3.9-3.5-2.5-6.6-5.5-9-9-11.5-16.5-7.4-39.1,9-50.6,17.5-12.2,21.8-36.2,9.6-53.7C98.9-1,74.9-5.2,57.4,6.9c-1.7,1.2-3.3,2.5-4.7,3.9L0,55.6v88.9Z"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="uuid-c1563820-4897-48c4-82a5-e388d4b823d4" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="63.5mm" height="70.6mm" viewBox="0 0 180 200">
+  <defs>
+    <style>
+      .uuid-bbd2d1a6-8b73-4deb-8984-27d5075a7862 {
+        fill: #1d1d1b;
+      }
+    </style>
+  </defs>
+  <g id="uuid-a0a49e47-4606-4a7e-9aa4-364d5a2a44b8" data-name="Capa 2">
+    <g id="uuid-eac08902-f5ae-47d7-a3b1-97c80e02e831" data-name="ARC">
+      <path class="uuid-bbd2d1a6-8b73-4deb-8984-27d5075a7862" d="M29.9,200H0V0H29.9c0,33.2,26.9,60.1,60.1,60.1S150.1,33.2,150.1,0h29.9V200h-29.9c0-33.2-26.9-60.1-60.1-60.1s-60.1,26.9-60.1,60.1Z"/>
+    </g>
+  </g>
+</svg>
