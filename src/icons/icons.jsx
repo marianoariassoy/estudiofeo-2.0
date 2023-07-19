@@ -42,3 +42,50 @@ export const Whatsapp = () => {
     </svg>
   );
 };
+
+export const IconScroll = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="21.4" height="29.8" viewBox="0 0 21.4 29.8">
+      <rect x=".5" y=".5" width="20.4" height="28.8" rx="10.2" ry="10.2" stroke="#000" fill="none" strokeMiterlimit="10" />
+      <line x1="10.1" y1="8.3" x2="10.1" y2="14.9" stroke="#000" fill="none" strokeMiterlimit="10" />
+    </svg>
+  );
+};
+
+export const IconBack = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="29.1" height="23.7" viewBox="0 0 29.1 23.7">
+      <line x1=".7" y1="12.4" x2="29.1" y2="12.4" stroke="#000" fill="none" strokeMiterlimit="10" />
+      <polyline points="12.8 .4 .7 12.4 12.8 23.3" stroke="#000" fill="none" strokeMiterlimit="10" />
+    </svg>
+  );
+};
+
+export const IconVideo = () => {
+  return (
+    <svg width="49" height="49" viewBox="0 0 49 49">
+      <circle cx="24.5" cy="24.5" r="24" stroke="#000" fill="none" strokeMiterlimit="10" />
+      <path d="M17.5,24v-7.7c0-1.8,1.9-2.8,3.4-2l6.6,3.8,6.6,3.8c1.5,.9,1.5,3.1,0,3.9l-6.6,3.8-6.6,3.8c-1.5,.9-3.4-.2-3.4-2v-7.7Z" stroke="#000" fill="none" strokeMiterlimit="10" />
+    </svg>
+  );
+};
+
+export const IconForward = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="29.1" height="23.7" viewBox="0 0 29.1 23.7">
+      <line x1="28.4" y1="11.2" y2="11.2" stroke="#000" fill="none" strokeMiterlimit="10" />
+      <polyline points="16.3 23.3 28.4 11.2 16.3 .4" stroke="#000" fill="none" strokeMiterlimit="10" />
+      <line x1="28.4" y1="11.2" y2="11.2" stroke="#000" fill="none" strokeMiterlimit="10" />
+      <polyline points="16.3 23.3 28.4 11.2 16.3 .4" stroke="#000" fill="none" strokeMiterlimit="10" />
+    </svg>
+  );
+};
+
+export const IconClose = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="36.8" height="36.8" viewBox="0 0 36.8 36.8">
+      <rect x="14.9" y="-4.1" width="7" height="45" transform="translate(-7.6 18.4) rotate(-45)" />
+      <rect x="-4.1" y="14.9" width="45" height="7" transform="translate(-7.6 18.4) rotate(-45)" />
+    </svg>
+  );
+};

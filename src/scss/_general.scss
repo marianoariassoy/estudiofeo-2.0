@@ -61,3 +61,13 @@ a {
   color: #f7f7f7;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
+
+svg {
+  fill: currentColor;
+  polyline {
+    stroke: currentColor;
+  }
+  line {
+    stroke: currentColor;
+  }
+}

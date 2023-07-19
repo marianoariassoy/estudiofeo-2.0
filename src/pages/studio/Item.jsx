@@ -16,7 +16,7 @@ const Item = ({ data, mask }) => {
   }, [data.image]);
 
   return (
-    <Link to={`/post/${data.id}`} className="item-mask items-center justify-center relative inline-flex">
+    <Link to={`/studio/${data.id}`} className="item-mask items-center justify-center relative inline-flex">
       <div className={`item-mask-txt absolute left-0 w-full z-30 px-12 opacity-0`}>
         <h3 className="font-bold">{data.number}</h3>
         <h2 className="text-xl font-bold leading-5">{data.title}</h2>

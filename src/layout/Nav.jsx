@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useDataContext } from "../context/lanContext";
 import { menu } from "../data/data";
 
@@ -22,9 +22,9 @@ const MenuPages = () => {
         <ul className="text-5xl lg:text-7xl font-extra">
           {menu.map((item) => (
             <li key={item.id}>
-              <Link to={item.url} className="menu-link">
+              <NavLink to={item.url} className="menu-link">
                 {lan === "es" ? item.title : item.title_eng}
-              </Link>
+              </NavLink>
             </li>
           ))}
           <li>

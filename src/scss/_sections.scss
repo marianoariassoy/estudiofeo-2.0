@@ -83,22 +83,22 @@
   }
 }
 
-.items-container-main {
-  width: 100%;
-  overflow-x: auto;
-  white-space: nowrap;
-  min-height: 280px;
-  align-items: flex-start;
-  .items-container {
-    display: inline-block;
-  }
-}
+// .items-container-main {
+//   width: 100%;
+//   overflow-x: auto;
+//   white-space: nowrap;
+//   min-height: 280px;
+//   align-items: flex-start;
+//   .items-container {
+//     display: inline-block;
+//   }
+// }
 
 .galeria-container {
   min-height: 280px;
 }
 
-.px-16 {
+.px-14 {
   @media (max-width: 980px) {
     padding-right: 2.5rem !important;
     padding-left: 2.5rem !important;
