@@ -1,5 +1,5 @@
-import Landing from "./Landing";
 import Layout from "../../layout/Layout";
+import Landing from "./Landing";
 import Creaciones from "./Creaciones";
 import Espacios from "./Espacios";
 import Arte from "./Arte";

@@ -1,7 +1,14 @@
-import React from "react";
+import Layout from "../../layout/Layout";
+import Landing from "./Landing";
+import Tienda from "./Tienda";
 
 const Shop = () => {
-  return <div>Shop</div>;
+  return (
+    <Layout>
+      <Landing />
+      <Tienda />
+    </Layout>
+  );
 };
 
 export default Shop;

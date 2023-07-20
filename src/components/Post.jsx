@@ -79,7 +79,7 @@ const Post = ({ section }) => {
 
           {data[0].link && (
             <div className="mb-4">
-              <a href={data[0].link} target="_blank" rel="noreferrer" className="border border-black rounded-full px-4 py-1 font-bold inline-flex  gap-2 items-center hover:opacity-60 mb-2">
+              <a href={data[0].link} target="_blank" rel="noreferrer" className="border border-black rounded-full px-4 py-2 font-bold inline-flex  gap-2 items-center hover:bg-black hover:text-white mb-2">
                 {lan === "es" ? "Ir al link" : "View Link"}
               </a>
             </div>

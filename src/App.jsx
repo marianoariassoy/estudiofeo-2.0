@@ -15,7 +15,9 @@ function App() {
           <Route path="/studio" element={<Studio />} />
           <Route path="/studio/:id" element={<Post section="studio" />} />
           <Route path="/shop" element={<Shop />} />
+          <Route path="/shop/:id" element={<Post section="shop" />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/gallery/:id" element={<Post section="gallery" />} />
         </Routes>
       </BrowserRouter>
     </>

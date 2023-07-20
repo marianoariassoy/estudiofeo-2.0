@@ -1,5 +1,12 @@
+import Layout from "../../layout/Layout";
+import Landing from "./Landing";
+
 const Gallery = () => {
-  return <div>Gallery</div>;
+  return (
+    <Layout>
+      <Landing />
+    </Layout>
+  );
 };
 
 export default Gallery;
