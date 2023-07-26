@@ -18,7 +18,7 @@ const Studio = () => {
   return (
     <Layout>
       <Helmet>
-        <title>{lan === "es" ? "Estudio" : "Studio"} Feo</title>
+        <title>{lan === "es" ? "Estudio" : "Studio"} FEO</title>
       </Helmet>
       <section className="px-12 pt-32 pb-10">
         <div className="flex justify-between items-center">
@@ -34,7 +34,7 @@ const Studio = () => {
           </div>
         </div>
       </section>
-      <Landing id={id} />
+      <Landing id={id} section="studio" />
       <Creaciones />
       <Espacios />
       <Arte />

@@ -14,7 +14,7 @@ export const menu = [
   },
   {
     id: 3,
-    title: "galeria",
+    title: "galería",
     title_eng: "gallery",
     url: "/gallery",
   },

@@ -10,7 +10,7 @@ const About = () => {
   return (
     <Layout>
       <Helmet>
-        <title>{lan === "es" ? "Nosotros" : "About"} Feo</title>
+        <title>{lan === "es" ? "Nosotros" : "About"} FEO</title>
       </Helmet>
       <section className="px-12 pt-32 pb-10">
         <div className="flex justify-between items-center">
@@ -26,7 +26,7 @@ const About = () => {
           </div>
         </div>
       </section>
-      <Landing id={id} />
+      <Landing id={id} section="about" />
     </Layout>
   );
 };

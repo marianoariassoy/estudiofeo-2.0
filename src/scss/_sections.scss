@@ -9,7 +9,7 @@
 }
 
 .fade-in {
-  animation: fadeIn 1s ease forwards;
+  animation: fadeIn 0.5s ease forwards;
 }
 @keyframes fadeIn {
   0% {
@@ -82,17 +82,6 @@
     height: auto;
   }
 }
-
-// .items-container-main {
-//   width: 100%;
-//   overflow-x: auto;
-//   white-space: nowrap;
-//   min-height: 280px;
-//   align-items: flex-start;
-//   .items-container {
-//     display: inline-block;
-//   }
-// }
 
 .galeria-container {
   min-height: 280px;

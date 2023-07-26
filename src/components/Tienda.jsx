@@ -13,7 +13,7 @@ const Tienda = ({ section, title }) => {
         <h1 className="mb-10 font-bold text-6xl">{title}</h1>
       </section>
 
-      <section className="galeria-container px-12 grid grid-cols-1 lg:grid-cols-5 2xl:grid-cols-6 gap-4">{loading ? <Loader /> : data.map((item) => <TiendaItem key={item.id} data={item} />)}</section>
+      <section className="galeria-container px-12 grid grid-cols-1 lg:grid-cols-5 2xl:grid-cols-6 gap-4">{loading ? <Loader /> : data.map((item) => <TiendaItem key={item.id} data={item} section={section} />)}</section>
     </>
   );
 };

@@ -21,6 +21,7 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/gallery/:id" element={<Post section="gallery" />} />
           <Route path="/about" element={<About />} />
+          <Route path="/about/:id" element={<Post section="about" />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </BrowserRouter>

@@ -5,7 +5,7 @@ import useFetch from "../hooks/useFetch";
 import Loader from "./Loader";
 import TextHTML from "../hooks/useHTML";
 
-const Landing = ({ id }) => {
+const Landing = ({ id, section }) => {
   const { lan } = useDataContext();
 
   const { data, loading } = useFetch(`/landings/${lan}/${id}`);
@@ -29,7 +29,7 @@ const Landing = ({ id }) => {
               </div>
             </div>
             <div className="overflow-hidden aspect-square lg:aspect-auto">
-              <Link to={`/studio/${id}`} className="hover:opacity-80 transition-all">
+              <Link to={`/${section}/${id}`} className="hover:opacity-80 transition-all">
                 <ImageComponent src={`${data[0].image}`} />
               </Link>
             </div>

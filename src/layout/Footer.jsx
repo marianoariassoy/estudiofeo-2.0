@@ -16,7 +16,11 @@ const Footer = () => {
                 +54 9 387 3436896
               </a>
             </div>
-            <div>Pueyrredón 190 &bull; Salta | Argentina</div>
+            <div>
+              <a href="https://goo.gl/maps/6mCdpgkqNceZ1mMWA" className="hover:line-through" target="_blank" rel="noopener noreferrer">
+                Pueyrredón 190 &bull; Salta | Argentina
+              </a>
+            </div>
             <div>
               <a href="mailto:hola@estudiofeo.com" className="hover:line-through">
                 hola@estudiofeo.com

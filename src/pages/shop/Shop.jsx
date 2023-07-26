@@ -11,7 +11,7 @@ const Shop = () => {
   return (
     <Layout>
       <Helmet>
-        <title>{lan === "es" ? "Tienda" : "Shop"} Feo</title>
+        <title>{lan === "es" ? "Tienda" : "Shop"} FEO</title>
       </Helmet>
       <section className="px-12 pt-32 pb-10">
         <div className="flex justify-between items-center">
@@ -27,8 +27,8 @@ const Shop = () => {
           </div>
         </div>
       </section>
-      <Landing id={id} />
-      <Tienda section="shop" title={lan === "es" ? "catálogo" : "catelogue"} />
+      <Landing id={id} section="shop" />
+      <Tienda section="shop" title={lan === "es" ? "catálogo" : "catalogue"} />
     </Layout>
   );
 };

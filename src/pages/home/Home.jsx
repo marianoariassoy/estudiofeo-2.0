@@ -3,9 +3,14 @@ import Layout from "../../layout/Layout";
 import { menu } from "../../data/data";
 import { Link } from "react-router-dom";
 import { useDataContext } from "../../context/lanContext";
+import { useEffect } from "react";
 
 const Home = () => {
   const { lan } = useDataContext();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <Layout>

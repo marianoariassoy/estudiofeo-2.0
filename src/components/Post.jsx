@@ -7,7 +7,6 @@ import Loader from "./Loader";
 import TextHTML from "../hooks/useHTML";
 import Modal from "./Modal";
 import ImageComponent from "./ImageComponent";
-
 import { IconBack, IconVideo, IconForward } from "../icons/icons";
 import Layout from "../layout/Layout";
 
@@ -40,14 +39,14 @@ const Post = ({ section }) => {
   if (section === "studio") url = "/studio";
   else if (section === "shop") url = "/shop";
   else if (section === "gallery") url = "/gallery";
+  else if (section === "about") url = "/about";
 
   return (
     <Layout>
       <Helmet>
         <title>FEO &bull; {data[0].title}</title>
       </Helmet>
-
-      <section className="lg:flex pt-36 px-12" id="post">
+      <section className="lg:flex pt-36 px-12">
         <div className="post-col-left">
           <div className="mb-4">
             <NavLink to={url} className="hover:opacity-60">
