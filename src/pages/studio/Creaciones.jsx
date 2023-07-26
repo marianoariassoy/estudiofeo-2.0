@@ -1,13 +1,11 @@
 import { useEffect } from "react";
 import { useDataContext } from "../../context/lanContext";
-import useFetch from "../../hooks/useFetch";
-import Loader from "../../components/Loader";
 import Item from "./ItemMain";
 import { IconScroll } from "../../icons/icons";
+import { categories } from "../../data/data";
 
 const Creaciones = () => {
   const { lan } = useDataContext();
-  const { data, loading } = useFetch(`/categorias/${lan}`);
 
   useEffect(() => {
     const menuLinks = document.querySelectorAll(".scroll");
@@ -25,10 +23,10 @@ const Creaciones = () => {
         behavior: "smooth",
       });
     }
-  }, [data]);
+  }, []);
 
   return (
-    <section className="px-12 pt-28 bg-secondary" id="creaciones">
+    <section className="px-12 pt-28 bg-secondary">
       <div className="flex justify-between items-center mb-20">
         <div>
           <h1 className="font-bold text-6xl">
@@ -40,7 +38,7 @@ const Creaciones = () => {
         </div>
       </div>
 
-      <div className="flex flex-wrap gap-y-8 justify-center">{loading ? <Loader /> : data && data.map((item) => <Item key={item.id} data={item} mask={item.id} />)}</div>
+      <div className="flex flex-wrap gap-y-8 justify-center">{categories && categories.map((item) => <Item key={item.id} data={item} />)}</div>
     </section>
   );
 };

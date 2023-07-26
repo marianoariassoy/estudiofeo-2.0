@@ -1,96 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="uuid-9aaaefdb-ca5d-4023-87ee-33401c45809d" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="59.6mm" height="70.8mm" viewBox="0 0 168.9 200.7">
+<svg id="uuid-595c5ea1-b5cc-4f3e-afe1-b716979ba62c" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="42mm" height="70.9mm" viewBox="0 0 119 201">
   <defs>
     <style>
-      .uuid-1fac1f3f-561a-4ad2-a750-5bb4ef16b3b0 {
+      .uuid-332629bf-1a2f-4d6f-89bd-bf5a10cbab14 {
+        stroke-dasharray: 0 0 28.9 28.9;
+      }
+
+      .uuid-332629bf-1a2f-4d6f-89bd-bf5a10cbab14, .uuid-ef5e43f7-55fc-4019-a20e-4acb7980efa1, .uuid-72a3d27b-a9d9-47c4-891d-0e5a8448cbbf {
         fill: none;
         stroke: #1d1d1b;
-        stroke-miterlimit: 10;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .uuid-ef5e43f7-55fc-4019-a20e-4acb7980efa1 {
+        stroke-dasharray: 0 0 20 20;
       }
     </style>
   </defs>
-  <g id="uuid-66a8615b-2008-4741-a258-b08bff3f4522" data-name="Capa 2">
-    <g>
-      <g id="uuid-6ae7924f-56db-414d-99c6-e3e0f1e480db" data-name="ARC">
-        <path class="uuid-1fac1f3f-561a-4ad2-a750-5bb4ef16b3b0" d="M4.6,160.2c33.1,44.2,95.6,53.1,139.7,20,7.6-5.7,14.3-12.4,20-20"/>
-      </g>
-      <g id="uuid-fefed7af-7352-404b-8f8a-81da66d5a8cd" data-name="LINE">
-        <line class="uuid-1fac1f3f-561a-4ad2-a750-5bb4ef16b3b0" x1="84.4" y1=".2" x2="59.5" y2="50.2"/>
-      </g>
-      <g id="uuid-4b9f2ad7-5242-4173-bb82-ed9ac01a893d" data-name="LINE">
-        <line class="uuid-1fac1f3f-561a-4ad2-a750-5bb4ef16b3b0" x1="53.3" y1="62.7" x2="47" y2="75.2"/>
-      </g>
-      <g id="uuid-28db0d18-e1a6-42e3-b476-e858c9beca47" data-name="LINE">
-        <line class="uuid-1fac1f3f-561a-4ad2-a750-5bb4ef16b3b0" x1="40.8" y1="87.7" x2="34.6" y2="100.2"/>
-      </g>
-      <g id="uuid-f6ddd0bc-d1f7-46bf-8244-17560b9f7f31" data-name="LINE">
-        <line class="uuid-1fac1f3f-561a-4ad2-a750-5bb4ef16b3b0" x1="28.3" y1="112.7" x2="4.6" y2="160.2"/>
-      </g>
-      <g id="uuid-b42242ef-a9f8-457e-81dc-9d866319c352" data-name="LINE">
-        <line class="uuid-1fac1f3f-561a-4ad2-a750-5bb4ef16b3b0" x1="33.1" y1="75.2" x2="26.9" y2="87.7"/>
-      </g>
-      <g id="uuid-84fcfbf7-94e3-4279-af88-96c1ea30bec5" data-name="LINE">
-        <line class="uuid-1fac1f3f-561a-4ad2-a750-5bb4ef16b3b0" x1="31.6" y1="50.2" x2="25.4" y2="62.7"/>
-      </g>
-      <g id="uuid-5d751f35-8c54-4276-8f03-781a313af039" data-name="LINE">
-        <line class="uuid-1fac1f3f-561a-4ad2-a750-5bb4ef16b3b0" x1="6.7" y1="100.2" x2=".4" y2="112.7"/>
-      </g>
-      <g id="uuid-54a7ba0e-066a-44b9-961e-8f610f8a7577" data-name="LINE">
-        <line class="uuid-1fac1f3f-561a-4ad2-a750-5bb4ef16b3b0" x1="84.4" y1=".2" x2="109.4" y2="50.2"/>
-      </g>
-      <g id="uuid-5dc11a46-c749-4679-9508-8dfb7bae28af" data-name="LINE">
-        <line class="uuid-1fac1f3f-561a-4ad2-a750-5bb4ef16b3b0" x1="115.6" y1="62.7" x2="121.9" y2="75.2"/>
-      </g>
-      <g id="uuid-0447bb88-27ad-4936-a711-5f7350102709" data-name="LINE">
-        <line class="uuid-1fac1f3f-561a-4ad2-a750-5bb4ef16b3b0" x1="128.1" y1="87.7" x2="134.3" y2="100.2"/>
-      </g>
-      <g id="uuid-079e4190-d46d-49aa-ab60-ea823b93f177" data-name="LINE">
-        <line class="uuid-1fac1f3f-561a-4ad2-a750-5bb4ef16b3b0" x1="140.6" y1="112.7" x2="164.3" y2="160.2"/>
-      </g>
-      <g id="uuid-982543f1-0b96-414b-be8e-b4359bff45a8" data-name="LINE">
-        <line class="uuid-1fac1f3f-561a-4ad2-a750-5bb4ef16b3b0" x1="135.8" y1="75.2" x2="142" y2="87.7"/>
-      </g>
-      <g id="uuid-4c0ab8d6-bba3-47ec-8451-c42ac90a1847" data-name="LINE">
-        <line class="uuid-1fac1f3f-561a-4ad2-a750-5bb4ef16b3b0" x1="137.3" y1="50.2" x2="143.5" y2="62.7"/>
-      </g>
-      <g id="uuid-9e64e0db-e413-4e7c-81b9-66c5b3961c21" data-name="LINE">
-        <line class="uuid-1fac1f3f-561a-4ad2-a750-5bb4ef16b3b0" x1="162.2" y1="100.2" x2="168.4" y2="112.7"/>
-      </g>
-      <g id="uuid-73bb0eb1-3e16-4516-8bb7-917f9a7711a1" data-name="LINE">
-        <line class="uuid-1fac1f3f-561a-4ad2-a750-5bb4ef16b3b0" x1="137.3" y1="50.2" x2="109.4" y2="50.2"/>
-      </g>
-      <g id="uuid-a15bc170-52ee-4b99-bdba-974c75e4c6ac" data-name="LINE">
-        <line class="uuid-1fac1f3f-561a-4ad2-a750-5bb4ef16b3b0" x1="59.5" y1="50.2" x2="31.6" y2="50.2"/>
-      </g>
-      <g id="uuid-58724d07-9bb4-4fa3-b02c-686e4eaae916" data-name="LINE">
-        <line class="uuid-1fac1f3f-561a-4ad2-a750-5bb4ef16b3b0" x1="143.5" y1="62.7" x2="115.6" y2="62.7"/>
-      </g>
-      <g id="uuid-eb32c54c-fd36-46a8-b2be-dfb664c289c5" data-name="LINE">
-        <line class="uuid-1fac1f3f-561a-4ad2-a750-5bb4ef16b3b0" x1="53.3" y1="62.7" x2="25.4" y2="62.7"/>
-      </g>
-      <g id="uuid-f316eec8-c76a-43ec-944b-223f5c923a66" data-name="LINE">
-        <line class="uuid-1fac1f3f-561a-4ad2-a750-5bb4ef16b3b0" x1="135.8" y1="75.2" x2="121.9" y2="75.2"/>
-      </g>
-      <g id="uuid-a8e4d27f-868f-4054-8e9f-423ab6f5b5e9" data-name="LINE">
-        <line class="uuid-1fac1f3f-561a-4ad2-a750-5bb4ef16b3b0" x1="47" y1="75.2" x2="33.1" y2="75.2"/>
-      </g>
-      <g id="uuid-0a045a2f-be45-4b4a-ab8c-85ead874874d" data-name="LINE">
-        <line class="uuid-1fac1f3f-561a-4ad2-a750-5bb4ef16b3b0" x1="142" y1="87.7" x2="128.1" y2="87.7"/>
-      </g>
-      <g id="uuid-5f891ecd-a209-4142-bc1c-c26312355f82" data-name="LINE">
-        <line class="uuid-1fac1f3f-561a-4ad2-a750-5bb4ef16b3b0" x1="40.8" y1="87.7" x2="26.9" y2="87.7"/>
-      </g>
-      <g id="uuid-77e0c880-99b8-4d64-87be-84ccaaa1f02b" data-name="LINE">
-        <line class="uuid-1fac1f3f-561a-4ad2-a750-5bb4ef16b3b0" x1="162.2" y1="100.2" x2="134.3" y2="100.2"/>
-      </g>
-      <g id="uuid-e8f7fb2d-8207-4b61-9c93-932993980a86" data-name="LINE">
-        <line class="uuid-1fac1f3f-561a-4ad2-a750-5bb4ef16b3b0" x1="34.6" y1="100.2" x2="6.7" y2="100.2"/>
-      </g>
-      <g id="uuid-2bb18377-578a-4dfc-bae2-78af8c7286ea" data-name="LINE">
-        <line class="uuid-1fac1f3f-561a-4ad2-a750-5bb4ef16b3b0" x1="168.4" y1="112.7" x2="140.6" y2="112.7"/>
-      </g>
-      <g id="uuid-096257a9-5d1d-4314-b8af-3787413fdbaa" data-name="LINE">
-        <line class="uuid-1fac1f3f-561a-4ad2-a750-5bb4ef16b3b0" x1="28.3" y1="112.7" x2=".4" y2="112.7"/>
+  <g id="uuid-ac72550b-abc1-43c4-8eda-6e1454b1f0aa" data-name="Capa 2">
+    <g id="uuid-e9c398eb-7d8a-4306-99e4-558f6dedfa30" data-name="LWPOLYLINE">
+      <g>
+        <polyline class="uuid-72a3d27b-a9d9-47c4-891d-0e5a8448cbbf" points=".5 130.5 .5 145 11.6 154.3"/>
+        <path class="uuid-332629bf-1a2f-4d6f-89bd-bf5a10cbab14" d="M33.6,173.1l19.6,16.6c15.3,14.8,39.7,14.4,54.5-.9,14.8-15.3,14.4-39.7-.9-54.5-1.5-1.4-3.1-2.7-4.7-3.9-3.5-2.5-6.6-5.5-9-9-11.5-16.5-7.4-39.1,9-50.6,17.5-12.2,21.8-36.2,9.6-53.7C99.4-.5,75.4-4.7,57.9,7.4c-1.7,1.2-3.3,2.5-4.7,3.9l-30.6,26"/>
+        <polyline class="uuid-72a3d27b-a9d9-47c4-891d-0e5a8448cbbf" points="11.6 46.7 .5 56.1 .5 70.6"/>
+        <line class="uuid-ef5e43f7-55fc-4019-a20e-4acb7980efa1" x1=".5" y1="90.5" x2=".5" y2="120.5"/>
       </g>
     </g>
   </g>

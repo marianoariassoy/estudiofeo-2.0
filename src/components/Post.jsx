@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link, NavLink, useParams } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useDataContext } from "../context/lanContext";
@@ -16,10 +16,11 @@ const Post = ({ section }) => {
   const { data, loading } = useFetch(`/post/${lan}/${id}`);
   const { data: dataImages, loading: loadingImages } = useFetch(`/imagenes/${id}`);
   const [currentVideo, setCurrentVideo] = useState(null);
+  let imageIcon;
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [id]);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, [id]);
 
   if (loading)
     return (
@@ -41,6 +42,30 @@ const Post = ({ section }) => {
   else if (section === "gallery") url = "/gallery";
   else if (section === "about") url = "/about";
 
+  switch (data[0].type) {
+    case 2:
+      imageIcon = "image-1.png";
+      break;
+    case 3:
+      imageIcon = "image-2.png";
+      break;
+    case 4:
+      imageIcon = "image-3.png";
+      break;
+    case 5:
+      imageIcon = "image-5.png";
+      break;
+    case 6:
+      imageIcon = "image-4.png";
+      break;
+    case 7:
+      imageIcon = "image-6.png";
+      break;
+
+    default:
+      break;
+  }
+
   return (
     <Layout>
       <Helmet>
@@ -56,6 +81,8 @@ const Post = ({ section }) => {
 
           <div className="grid grid-cols-2 justify-between items-center lg:grid-cols-1">
             <div className="mb-8 hidden lg:block">
+              {imageIcon && <img src={`/assets/images/${imageIcon}`} className="w-1/2 mb-4" />}
+
               <h2 className="font-bold text-3xl">
                 {data[0].section_name} <span className="font-extraitalic">{data[0].section_name_2} </span>
               </h2>
@@ -88,7 +115,7 @@ const Post = ({ section }) => {
             {data[0].prev && (
               <Link to={`/studio/${data[0].prev}`} className="border border-black rounded-full px-4 py-2 font-bold inline-flex gap-2 items-center hover:bg-black hover:text-white mb-4 ">
                 <IconBack />
-                {lan === "es" ? "Anterior" : "Previous"}
+                {lan === "es" ? "Anterior" : "Prev"}
               </Link>
             )}
             {data[0].next && (
@@ -100,7 +127,7 @@ const Post = ({ section }) => {
           </div>
         </div>
 
-        <div className="post-col-right flex flex-wrap ">
+        <div className="post-col-right flex flex-wrap">
           {dataImages.map((item, index) => {
             return (
               <div key={index} className={item.square > 0 ? "w-1/2" : "w-full"}>

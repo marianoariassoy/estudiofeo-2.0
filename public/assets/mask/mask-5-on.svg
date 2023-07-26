@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="uuid-7cfb1d6d-c0a3-45da-a220-f3e523bc6e21" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="176" height="316" viewBox="0 0 176 316">
-  <g id="uuid-3b778766-0715-4f28-80c5-9073a0ac7591" data-name="Capa 1">
-    <path d="M88,0h0c48.6,0,88,39.4,88,88v228H0V88C0,39.4,39.4,0,88,0Z"/>
+<svg id="uuid-516fe800-fcea-4771-b0aa-b37944a3e658" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="176" height="316" viewBox="0 0 176 316">
+  <g id="uuid-0d025cc2-0211-4c1b-81c0-bee2167aeca3" data-name="Capa 1">
+    <ellipse cx="88" cy="158" rx="88" ry="158"/>
   </g>
 </svg>

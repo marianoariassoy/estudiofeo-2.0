@@ -36,11 +36,11 @@ const Studio = () => {
       </section>
       <Landing id={id} section="studio" />
       <Creaciones />
-      <Espacios />
-      <Arte />
-      <Objetos />
       <Muebles />
+      <Espacios />
+      <Objetos />
       <Efimeros />
+      <Arte />
       <Alianzas />
     </Layout>
   );
