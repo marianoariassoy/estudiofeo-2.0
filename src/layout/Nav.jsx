@@ -17,7 +17,7 @@ const MenuPages = () => {
   };
 
   return (
-    <div className="nav absolute px-12 w-full h-screen z-10 bg-white">
+    <div className="nav fixed px-12 w-full h-screen z-10 bg-white">
       <nav className="flex items-center h-full">
         <ul className="text-5xl lg:text-7xl font-extra">
           {menu.map((item) => (
