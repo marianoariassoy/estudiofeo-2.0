@@ -1,19 +1,21 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Layout from "../../layout/Layout";
 import Landing from "../../components/Landing";
 import Creaciones from "./Creaciones";
-// import Espacios from "./Espacios";
-// import Arte from "./Arte";
-// import Objetos from "./Objetos";
-// import Muebles from "./Muebles";
-// import Efimeros from "./Efimeros";
-// import Alianzas from "./Alianzas";
 import { useDataContext } from "../../context/lanContext";
 import { Helmet } from "react-helmet";
 
 const Studio = () => {
   const { lan } = useDataContext();
   const id = 135;
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
 
   return (
     <Layout>
@@ -36,12 +38,6 @@ const Studio = () => {
       </section>
       <Landing id={id} section="studio" />
       <Creaciones />
-      {/* <Muebles />
-      <Espacios />
-      <Objetos />
-      <Efimeros />
-      <Arte />
-      <Alianzas /> */}
     </Layout>
   );
 };

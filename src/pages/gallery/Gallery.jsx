@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Layout from "../../layout/Layout";
 import Landing from "../../components/Landing";
@@ -7,6 +8,13 @@ import { Helmet } from "react-helmet";
 const Gallery = () => {
   const { lan } = useDataContext();
   const id = 131;
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
 
   return (
     <Layout>

@@ -1,12 +1,21 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Layout from "../../layout/Layout";
 import Landing from "../../components/Landing";
 import Tienda from "../../components/Tienda";
 import { useDataContext } from "../../context/lanContext";
 import { Helmet } from "react-helmet";
+
 const Shop = () => {
   const { lan } = useDataContext();
   const id = 130;
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
 
   return (
     <Layout>

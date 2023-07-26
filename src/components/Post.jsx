@@ -3,12 +3,12 @@ import { Link, NavLink, useParams } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useDataContext } from "../context/lanContext";
 import useFetch from "../hooks/useFetch";
+import Layout from "../layout/Layout";
 import Loader from "./Loader";
 import TextHTML from "../hooks/useHTML";
 import Modal from "./Modal";
 import ImageComponent from "./ImageComponent";
 import { IconBack, IconVideo, IconForward } from "../icons/icons";
-import Layout from "../layout/Layout";
 
 const Post = ({ section }) => {
   let { id } = useParams();
@@ -18,9 +18,10 @@ const Post = ({ section }) => {
   const [currentVideo, setCurrentVideo] = useState(null);
   let imageIcon;
 
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, [id]);
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 
   if (loading)
     return (

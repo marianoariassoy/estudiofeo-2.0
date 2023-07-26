@@ -12,7 +12,11 @@ const Home = () => {
   const src = "./assets/images/bg-home.jpg";
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+
     const image = new Image();
     image.src = src;
     image.onload = () => {
