@@ -26,19 +26,22 @@ const Home = () => {
 
   return (
     <Layout>
-      <section className="w-full h-screen px-12 pt-32   flex items-end pb-20">
+      <section className="relative aspect-video mt-32">
         <Helmet>
           <title>FEO</title>
         </Helmet>
-        <div className="flex flex-col gap-y-2">
-          {menu.slice(0, 3).map((item) => (
-            <Link to={item.url} className="text-white text-6xl font-bold hover:text-black" key={item.id}>
-              {lan === "es" ? item.title : item.title_eng}
-            </Link>
-          ))}
+
+        <div className="absolute w-screen h-screen px-12">
+          <div className="absolute bottom-48 flex flex-col gap-y-2 z-10">
+            {menu.slice(0, 3).map((item) => (
+              <Link to={item.url} className="text-white text-6xl font-bold hover:text-black" key={item.id}>
+                {lan === "es" ? item.title : item.title_eng}
+              </Link>
+            ))}
+          </div>
         </div>
 
-        <div className="absolute top-0 left-0 -z-10 w-full h-full bg-black">{isLoading ? <BeatLoader /> : <img src={src} className="fade-in h-full w-full object-cover" />}</div>
+        <div className="w-full h-screen bg-black">{isLoading ? <BeatLoader /> : <img src={src} className="fade-in h-full w-full object-cover" />}</div>
       </section>
     </Layout>
   );

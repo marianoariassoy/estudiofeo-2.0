@@ -40,9 +40,15 @@
   &:hover {
     .item-mask-image {
       opacity: 0;
+      @media (max-width: 980px) {
+        opacity: 1;
+      }
     }
     .item-mask-txt {
       opacity: 1;
+      @media (max-width: 980px) {
+        opacity: 0;
+      }
     }
   }
 }

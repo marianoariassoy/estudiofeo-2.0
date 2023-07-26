@@ -22,18 +22,9 @@ const Gallery = () => {
         <title>{lan === "es" ? "Galería" : "Gallery"} FEO</title>
       </Helmet>
       <section className="px-12 pt-32 pb-10">
-        <div className="flex justify-between items-center">
-          <div>
-            <h1 className="font-bold text-6xl">
-              {lan === "es" ? "galería" : "gallery"} <span className="font-extraitalic">feo</span>
-            </h1>
-          </div>
-          <div>
-            <Link to={`/gallery/${id}`} className="border-2 border-black rounded-full px-4 py-2 font-bold hover:bg-black hover:text-white">
-              {lan === "es" ? "VER MÁS" : "MORE"}
-            </Link>
-          </div>
-        </div>
+        <h1 className="font-bold text-6xl">
+          {lan === "es" ? "galería" : "gallery"} <span className="font-extraitalic">feo</span>
+        </h1>
       </section>
       <Landing id={id} section="gallery" />
       <Tienda section="gallery" title={lan === "es" ? "exposiciones" : "exhibitions"} />

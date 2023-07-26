@@ -38,7 +38,7 @@ const List = ({ categorie }) => {
   const { data, loading } = useFetch(url + lan);
 
   return (
-    <section className="pt-28 bg-secondary" id="list">
+    <section className="pt-28" id="list">
       <div className="flex flex-wrap gap-y-8 justify-center">{loading ? <Loader /> : data && data.map((item) => <Item key={item.id} data={item} mask={mask} />)}</div>
     </section>
   );

@@ -4,7 +4,7 @@ import Item from "./ItemMain";
 import { IconScroll } from "../../icons/icons";
 import { categories } from "../../data/data";
 import List from "./List";
-
+import { Points } from "../../icons/icons";
 const Creaciones = () => {
   const { lan } = useDataContext();
   const [categorie, setCategorie] = useState(0);
@@ -19,7 +19,7 @@ const Creaciones = () => {
   }, [categorie]);
 
   return (
-    <section className="px-12 py-28 bg-secondary">
+    <section className="px-12 py-28">
       <div className="flex justify-between items-center mb-20">
         <div>
           <h1 className="font-bold text-6xl">
@@ -31,10 +31,14 @@ const Creaciones = () => {
         </div>
       </div>
 
-      <div className="flex flex-wrap gap-y-8 justify-center">
+      <div className="flex flex-wrap gap-y-12 justify-center">
         {categories.map((item) => (
           <Item key={item.id} data={item} categorie={categorie} setCategorie={setCategorie} />
         ))}
+      </div>
+
+      <div className="w-full flex justify-center mt-24">
+        <Points />
       </div>
 
       <List categorie={categorie} />
