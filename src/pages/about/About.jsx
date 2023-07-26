@@ -2,35 +2,33 @@ import { Link } from "react-router-dom";
 import Layout from "../../layout/Layout";
 import Landing from "../../components/Landing";
 import { useDataContext } from "../../context/lanContext";
-import Tienda from "../../components/Tienda";
 import { Helmet } from "react-helmet";
-const Gallery = () => {
+const About = () => {
   const { lan } = useDataContext();
-  const id = 131;
+  const id = 77;
 
   return (
     <Layout>
       <Helmet>
-        <title>{lan === "es" ? "Galería" : "Gallery"} Feo</title>
+        <title>{lan === "es" ? "Nosotros" : "About"} Feo</title>
       </Helmet>
       <section className="px-12 pt-32 pb-10">
         <div className="flex justify-between items-center">
           <div>
             <h1 className="font-bold text-6xl">
-              {lan === "es" ? "galería" : "gallery"} <span className="font-extraitalic">feo</span>
+              {lan === "es" ? "nosotros" : "about"} <span className="font-extraitalic">feo</span>
             </h1>
           </div>
           <div>
-            <Link to={`/shop/${id}`} className="border-2 border-black rounded-full px-4 py-2 font-bold hover:bg-black hover:text-white">
+            <Link to={`/about/${id}`} className="border-2 border-black rounded-full px-4 py-2 font-bold hover:bg-black hover:text-white">
               {lan === "es" ? "VER MÁS" : "MORE"}
             </Link>
           </div>
         </div>
       </section>
       <Landing id={id} />
-      <Tienda section="gallery" title={lan === "es" ? "muestras" : "exhibitions"} />
     </Layout>
   );
 };
 
-export default Gallery;
+export default About;

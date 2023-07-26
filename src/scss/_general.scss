@@ -11,7 +11,15 @@ body {
   }
 }
 
-//Links
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  main {
+    flex: 1;
+  }
+}
+
 a {
   color: $text-color-primary;
 }
@@ -19,7 +27,6 @@ a {
   color: $color-primary;
 }
 
-//Fonts
 .font-primary {
   font-family: $font-main;
 }
@@ -56,7 +63,6 @@ a {
 .bg-white {
   background-color: white !important;
 }
-
 .text-outline {
   color: #f7f7f7;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;

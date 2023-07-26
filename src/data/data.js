@@ -18,4 +18,10 @@ export const menu = [
     title_eng: "gallery",
     url: "/gallery",
   },
+  {
+    id: 4,
+    title: "notrosos",
+    title_eng: "about us",
+    url: "/about",
+  },
 ];

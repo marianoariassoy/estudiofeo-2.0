@@ -4,6 +4,8 @@ import Home from "./pages/home/Home";
 import Studio from "./pages/studio/Studio";
 import Shop from "./pages/shop/Shop";
 import Gallery from "./pages/gallery/Gallery";
+import About from "./pages/about/About";
+import Error from "./pages/error/Error";
 import Post from "./components/Post";
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
           <Route path="/shop/:id" element={<Post section="shop" />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/gallery/:id" element={<Post section="gallery" />} />
+          <Route path="/about" element={<About />} />
+          <Route path="*" element={<Error />} />
         </Routes>
       </BrowserRouter>
     </>
