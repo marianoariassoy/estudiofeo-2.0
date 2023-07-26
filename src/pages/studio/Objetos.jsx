@@ -8,12 +8,10 @@ const Objetos = () => {
   const { data, loading } = useFetch(`/objetos/${lan}`);
 
   return (
-    <section className="px-12 pt-28 bg-secondary" id="objetos">
-      <div className="mb-20">
-        <h1 className="font-bold text-6xl">
-          {lan === "es" ? "objetos" : "objects"} <span className="font-extraitalic">feos</span>
-        </h1>
-      </div>
+    <section className="pt-28 bg-secondary">
+      <h1 className="font-bold text-6xl mb-20">
+        {lan === "es" ? "objetos" : "objects"} <span className="font-extraitalic">feos</span>
+      </h1>
 
       <div className="flex flex-wrap gap-y-8 justify-center">{loading ? <Loader /> : data && data.map((item) => <Item key={item.id} data={item} mask="3" />)}</div>
     </section>

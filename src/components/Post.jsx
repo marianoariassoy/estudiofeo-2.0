@@ -72,14 +72,14 @@ const Post = ({ section }) => {
         <title>FEO &bull; {data[0].title}</title>
       </Helmet>
       <section className="lg:flex pt-36 px-12">
-        <div className="post-col-left">
+        <div className="post-col-left mb-8">
           <div className="mb-4">
             <NavLink to={url} className="hover:opacity-60">
               <IconBack />
             </NavLink>
           </div>
 
-          <div className="grid grid-cols-2 justify-between items-center lg:grid-cols-1">
+          <div className="grid grid-cols-2 justify-between items-center lg:grid-cols-1 ">
             <div className="mb-8 hidden lg:block">
               {imageIcon && <img src={`/assets/images/${imageIcon}`} className="w-1/2 mb-4" />}
 

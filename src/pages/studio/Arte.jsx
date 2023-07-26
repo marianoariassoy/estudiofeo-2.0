@@ -8,12 +8,10 @@ const Arte = () => {
   const { data, loading } = useFetch(`/arte/${lan}`);
 
   return (
-    <section className="px-12 pt-28 bg-secondary" id="arte">
-      <div className="mb-20">
-        <h1 className="font-bold text-6xl">
-          {lan === "es" ? "arte" : "art"} <span className="font-extraitalic">feo</span>
-        </h1>
-      </div>
+    <section className="pt-28 bg-secondary">
+      <h1 className="font-bold text-6xl mb-20">
+        {lan === "es" ? "arte" : "art"} <span className="font-extraitalic">feo</span>
+      </h1>
 
       <div className="flex flex-wrap gap-y-8 justify-center">{loading ? <Loader /> : data && data.map((item) => <Item key={item.id} data={item} mask="2" />)}</div>
     </section>

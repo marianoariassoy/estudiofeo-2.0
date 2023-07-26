@@ -8,12 +8,10 @@ const Alianzas = () => {
   const { data, loading } = useFetch(`/alianzas/${lan}`);
 
   return (
-    <section className="px-12 p-28 bg-secondary" id="alianzas">
-      <div className="data-hidden-alianzas mb-20">
-        <h1 className="font-bold text-6xl">
-          {lan === "es" ? "alianzas" : "aliances"} <span className="font-extraitalic">feas</span>
-        </h1>
-      </div>
+    <section className="pt-28 bg-secondary">
+      <h1 className="font-bold text-6xl mb-20">
+        {lan === "es" ? "alianzas" : "aliances"} <span className="font-extraitalic">feas</span>
+      </h1>
 
       <div className="flex flex-wrap gap-y-8 justify-center">{loading ? <Loader /> : data && data.map((item) => <Item key={item.id} data={item} mask="6" />)}</div>
     </section>

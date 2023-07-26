@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 import Layout from "../../layout/Layout";
 import Landing from "../../components/Landing";
 import Creaciones from "./Creaciones";
-import Espacios from "./Espacios";
-import Arte from "./Arte";
-import Objetos from "./Objetos";
-import Muebles from "./Muebles";
-import Efimeros from "./Efimeros";
-import Alianzas from "./Alianzas";
+// import Espacios from "./Espacios";
+// import Arte from "./Arte";
+// import Objetos from "./Objetos";
+// import Muebles from "./Muebles";
+// import Efimeros from "./Efimeros";
+// import Alianzas from "./Alianzas";
 import { useDataContext } from "../../context/lanContext";
 import { Helmet } from "react-helmet";
 
@@ -36,12 +36,12 @@ const Studio = () => {
       </section>
       <Landing id={id} section="studio" />
       <Creaciones />
-      <Muebles />
+      {/* <Muebles />
       <Espacios />
       <Objetos />
       <Efimeros />
       <Arte />
-      <Alianzas />
+      <Alianzas /> */}
     </Layout>
   );
 };

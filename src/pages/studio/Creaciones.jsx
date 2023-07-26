@@ -1,32 +1,25 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useDataContext } from "../../context/lanContext";
 import Item from "./ItemMain";
 import { IconScroll } from "../../icons/icons";
 import { categories } from "../../data/data";
+import List from "./List";
 
 const Creaciones = () => {
   const { lan } = useDataContext();
+  const [categorie, setCategorie] = useState(0);
 
   useEffect(() => {
-    const menuLinks = document.querySelectorAll(".scroll");
-
-    menuLinks.forEach((link) => {
-      link.addEventListener("click", smoothScroll);
+    if (categorie === 0) return;
+    const targetElement = document.querySelector("#list");
+    window.scrollTo({
+      top: targetElement.offsetTop - 100,
+      behavior: "smooth",
     });
-
-    function smoothScroll(e) {
-      e.preventDefault();
-      const targetId = this.getAttribute("href");
-      const targetElement = document.querySelector(targetId);
-      window.scrollTo({
-        top: targetElement.offsetTop,
-        behavior: "smooth",
-      });
-    }
-  }, []);
+  }, [categorie]);
 
   return (
-    <section className="px-12 pt-28 bg-secondary">
+    <section className="px-12 py-28 bg-secondary">
       <div className="flex justify-between items-center mb-20">
         <div>
           <h1 className="font-bold text-6xl">
@@ -38,7 +31,13 @@ const Creaciones = () => {
         </div>
       </div>
 
-      <div className="flex flex-wrap gap-y-8 justify-center">{categories && categories.map((item) => <Item key={item.id} data={item} />)}</div>
+      <div className="flex flex-wrap gap-y-8 justify-center">
+        {categories.map((item) => (
+          <Item key={item.id} data={item} categorie={categorie} setCategorie={setCategorie} />
+        ))}
+      </div>
+
+      <List categorie={categorie} />
     </section>
   );
 };
