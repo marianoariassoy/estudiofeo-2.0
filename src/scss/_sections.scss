@@ -54,7 +54,10 @@
 }
 
 .mask {
-  height: 200px;
+  height: 180px;
+  @media (max-width: 980px) {
+    height: 140px;
+  }
   aspect-ratio: 1/1;
   object-fit: cover;
 
@@ -122,4 +125,7 @@
 
 .mask-outline {
   height: 180px;
+  @media (max-width: 980px) {
+    height: 140px;
+  }
 }
