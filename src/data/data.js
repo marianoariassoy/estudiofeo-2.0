@@ -24,6 +24,12 @@ export const menu = [
     title_eng: "about us",
     url: "/about",
   },
+  {
+    id: 5,
+    title: "contacto",
+    title_eng: "contact",
+    url: "/contact",
+  },
 ];
 
 export const categories = [

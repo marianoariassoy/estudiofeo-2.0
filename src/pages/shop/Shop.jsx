@@ -11,11 +11,7 @@ const Shop = () => {
 
   useEffect(() => {
     setSection("shop");
-
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    window.scrollTo(0, 0);
   }, [setSection]);
 
   return (

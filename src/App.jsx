@@ -7,6 +7,7 @@ import Gallery from "./pages/gallery/Gallery";
 import About from "./pages/about/About";
 import Error from "./pages/error/Error";
 import Post from "./components/Post";
+import Contact from "./pages/contact/Contact";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/gallery/:id" element={<Post section="gallery" />} />
           <Route path="/about" element={<About />} />
           <Route path="/about/:id" element={<Post section="about" />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </BrowserRouter>

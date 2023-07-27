@@ -5,17 +5,6 @@ import { menu } from "../data/data";
 const MenuPages = () => {
   const { lan } = useDataContext();
 
-  const goToContact = (e) => {
-    e.preventDefault();
-    document.querySelector(".nav").classList.toggle("active");
-    document.querySelector(".nav-menu").classList.toggle("active");
-    const targetElement = document.querySelector("#contacto");
-    window.scrollTo({
-      top: targetElement.offsetTop,
-      behavior: "smooth",
-    });
-  };
-
   return (
     <div className="nav fixed px-12 w-full h-screen z-30 bg-white">
       <nav className="flex items-center h-full">
@@ -27,11 +16,6 @@ const MenuPages = () => {
               </NavLink>
             </li>
           ))}
-          <li>
-            <a href="#" className="menu-link" onClick={goToContact}>
-              {lan === "es" ? "contacto" : "contact"}
-            </a>
-          </li>
         </ul>
       </nav>
     </div>

@@ -14,10 +14,7 @@ const Home = () => {
   useEffect(() => {
     setSection("home");
 
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    window.scrollTo(0, 0);
 
     const image = new Image();
     image.src = src;

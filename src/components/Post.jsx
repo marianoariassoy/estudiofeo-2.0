@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, NavLink, useParams } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useDataContext } from "../context/lanContext";
@@ -18,10 +18,9 @@ const Post = ({ section }) => {
   const [currentVideo, setCurrentVideo] = useState(null);
   let imageIcon;
 
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]);
 
   if (data) {
     switch (data[0].type) {

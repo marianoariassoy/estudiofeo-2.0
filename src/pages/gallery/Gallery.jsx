@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
 import Layout from "../../layout/Layout";
 import Landing from "../../components/Landing";
 import { useDataContext } from "../../context/lanContext";
@@ -11,11 +10,7 @@ const Gallery = () => {
 
   useEffect(() => {
     setSection("gallery");
-
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    window.scrollTo(0, 0);
   }, [setSection]);
 
   return (
