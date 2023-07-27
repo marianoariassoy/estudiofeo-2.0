@@ -5,13 +5,11 @@ import { Link } from "react-router-dom";
 import { useDataContext } from "../../context/lanContext";
 import Layout from "../../layout/Layout";
 import BeatLoader from "react-spinners/BeatLoader";
-import { set } from "react-hook-form";
 
 const Home = () => {
-  const { lan, setSection } = useDataContext();
+  const { lan, setSection, imageURL } = useDataContext();
   const [isLoading, setIsLoading] = useState(true);
-
-  const src = "./assets/images/bg-home.jpg";
+  const src = imageURL + "bg-home.jpg";
 
   useEffect(() => {
     setSection("home");
@@ -26,7 +24,7 @@ const Home = () => {
     image.onload = () => {
       setIsLoading(false);
     };
-  }, [setSection]);
+  }, [setSection, src]);
 
   return (
     <Layout>
