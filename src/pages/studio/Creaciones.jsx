@@ -36,7 +36,7 @@ const Creaciones = () => {
         ))}
       </div>
 
-      <List categorie={categorie} />
+      {categorie === 0 ? "" : <List categorie={categorie} />}
     </section>
   );
 };

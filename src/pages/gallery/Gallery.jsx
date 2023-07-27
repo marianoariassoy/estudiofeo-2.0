@@ -6,15 +6,17 @@ import { useDataContext } from "../../context/lanContext";
 import Tienda from "../../components/Tienda";
 import { Helmet } from "react-helmet";
 const Gallery = () => {
-  const { lan } = useDataContext();
+  const { lan, setSection } = useDataContext();
   const id = 131;
 
   useEffect(() => {
+    setSection("gallery");
+
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
-  }, []);
+  }, [setSection]);
 
   return (
     <Layout>

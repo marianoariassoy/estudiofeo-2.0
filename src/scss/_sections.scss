@@ -1,12 +1,12 @@
-.slider-home {
-  height: 70vh;
-}
+// .slider-home {
+//   height: 70vh;
+// }
 
-.indicators {
-  li {
-    margin: 0 0.25rem !important;
-  }
-}
+// .indicators {
+//   li {
+//     margin: 0 0.25rem !important;
+//   }
+// }
 
 .fade-in {
   animation: fadeIn 0.5s ease forwards;
@@ -19,6 +19,7 @@
     opacity: 1;
   }
 }
+
 .btn {
   &:hover {
     color: black;
@@ -95,10 +96,16 @@
   min-height: 280px;
 }
 
-.px-14 {
+.px-12 {
   @media (max-width: 980px) {
-    padding-right: 2.5rem !important;
-    padding-left: 2.5rem !important;
+    padding-right: 2rem !important;
+    padding-left: 2rem !important;
+  }
+}
+
+.p-12 {
+  @media (max-width: 980px) {
+    padding: 2rem !important;
   }
 }
 

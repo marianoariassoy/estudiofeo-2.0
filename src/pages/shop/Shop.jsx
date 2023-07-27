@@ -6,15 +6,17 @@ import Tienda from "../../components/Tienda";
 import { useDataContext } from "../../context/lanContext";
 
 const Shop = () => {
-  const { lan } = useDataContext();
+  const { lan, setSection } = useDataContext();
   const id = 130;
 
   useEffect(() => {
+    setSection("shop");
+
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
-  }, []);
+  }, [setSection]);
 
   return (
     <Layout>

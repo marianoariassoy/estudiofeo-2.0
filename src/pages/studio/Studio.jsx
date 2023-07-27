@@ -7,15 +7,17 @@ import { useDataContext } from "../../context/lanContext";
 import { Helmet } from "react-helmet";
 
 const Studio = () => {
-  const { lan } = useDataContext();
+  const { lan, setSection } = useDataContext();
   const id = 135;
 
   useEffect(() => {
+    setSection("studio");
+
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
-  }, []);
+  }, [setSection]);
 
   return (
     <Layout>

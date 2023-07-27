@@ -1,17 +1,21 @@
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
-import Layout from "../../layout/Layout";
 import { menu } from "../../data/data";
 import { Link } from "react-router-dom";
 import { useDataContext } from "../../context/lanContext";
+import Layout from "../../layout/Layout";
 import BeatLoader from "react-spinners/BeatLoader";
+import { set } from "react-hook-form";
 
 const Home = () => {
-  const { lan } = useDataContext();
+  const { lan, setSection } = useDataContext();
   const [isLoading, setIsLoading] = useState(true);
+
   const src = "./assets/images/bg-home.jpg";
 
   useEffect(() => {
+    setSection("home");
+
     window.scrollTo({
       top: 0,
       behavior: "smooth",
@@ -22,11 +26,11 @@ const Home = () => {
     image.onload = () => {
       setIsLoading(false);
     };
-  }, []);
+  }, [setSection]);
 
   return (
     <Layout>
-      <section className="relative aspect-video mt-32">
+      <section className="relative h-screen overflow-hidden mt-32">
         <Helmet>
           <title>FEO</title>
         </Helmet>

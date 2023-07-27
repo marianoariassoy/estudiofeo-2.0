@@ -1,11 +1,21 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Layout from "../../layout/Layout";
 import Landing from "../../components/Landing";
 import { useDataContext } from "../../context/lanContext";
 import { Helmet } from "react-helmet";
 const About = () => {
-  const { lan } = useDataContext();
+  const { lan, setSection } = useDataContext();
   const id = 77;
+
+  useEffect(() => {
+    setSection("about");
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, [setSection]);
 
   return (
     <Layout>
