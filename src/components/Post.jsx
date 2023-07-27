@@ -127,6 +127,7 @@ const Post = ({ section }) => {
           {loadingImages ? (
             <Loader />
           ) : (
+            dataImages &&
             dataImages.map((item, index) => {
               return (
                 <div key={index} className={item.square > 0 ? "w-1/2" : "w-full"}>
