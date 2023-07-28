@@ -79,3 +79,14 @@ export const categories = [
     image: "image-6.png",
   },
 ];
+
+export const languages = [
+  {
+    id: 1,
+    title: "en",
+  },
+  {
+    id: 2,
+    title: "es",
+  },
+];

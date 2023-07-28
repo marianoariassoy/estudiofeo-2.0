@@ -6,6 +6,8 @@ const ImageComponent = ({ src, alt }) => {
   const [isLoading, setIsLoading] = useState(true);
   const { imageURL } = useDataContext();
 
+  // loader - full - img;
+
   useEffect(() => {
     const image = new Image();
     image.src = imageURL + src;
@@ -16,7 +18,7 @@ const ImageComponent = ({ src, alt }) => {
 
   return (
     <>
-      <div className="flex items-center justify-center h-full w-full loader-full-img">{isLoading ? <BeatLoader /> : <img loading="lazy" src={imageURL + src} alt={alt} className="fade-in h-full w-full object-cover" />}</div>
+      <div className="flex items-center justify-center h-full w-full">{isLoading ? <BeatLoader /> : <img loading="lazy" src={imageURL + src} alt={alt} className="fade-in h-full w-full object-cover object-center" />}</div>
     </>
   );
 };

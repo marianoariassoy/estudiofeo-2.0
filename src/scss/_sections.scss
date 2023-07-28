@@ -36,7 +36,7 @@
 
 .item-mask {
   cursor: pointer;
-  margin: 0 1rem;
+  margin: 0 0.7rem;
 
   &:hover {
     .item-mask-image {
@@ -55,13 +55,12 @@
 }
 
 .mask {
-  height: 180px;
+  height: 165px;
   @media (max-width: 980px) {
     height: 130px;
   }
   aspect-ratio: 1/1;
   object-fit: cover;
-
   mask-size: 100% 100%;
   mask-repeat: no-repeat;
   mask-position: top;
@@ -90,10 +89,6 @@
   @media (max-width: 980px) {
     height: auto;
   }
-}
-
-.galeria-container {
-  min-height: 280px;
 }
 
 .px-12 {
@@ -131,7 +126,7 @@
 }
 
 .mask-outline {
-  height: 170px;
+  height: 165px;
   @media (max-width: 980px) {
     height: 130px;
   }

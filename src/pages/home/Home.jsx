@@ -9,19 +9,25 @@ import BeatLoader from "react-spinners/BeatLoader";
 const Home = () => {
   const { lan, setSection, imageURL } = useDataContext();
   const [isLoading, setIsLoading] = useState(true);
-  const src = imageURL + "bg-home.jpg";
+
+  let imageSrc = "";
+  const windowsWidth = window.innerWidth;
+  if (windowsWidth < 768) {
+    imageSrc = imageURL + "bg-home-portrait.jpg";
+  } else {
+    imageSrc = imageURL + "bg-home.jpg";
+  }
 
   useEffect(() => {
     setSection("home");
-
     window.scrollTo(0, 0);
 
     const image = new Image();
-    image.src = src;
+    image.src = imageSrc;
     image.onload = () => {
       setIsLoading(false);
     };
-  }, [setSection, src]);
+  }, [setSection, imageSrc]);
 
   return (
     <Layout>
@@ -33,14 +39,27 @@ const Home = () => {
         <div className="absolute w-screen h-screen px-12">
           <div className="absolute bottom-48 flex flex-col gap-y-2 z-10">
             {menu.slice(0, 3).map((item) => (
-              <Link to={item.url} className="text-white text-6xl font-bold hover:text-black" key={item.id}>
+              <Link
+                to={item.url}
+                className="text-white text-6xl font-bold hover:text-black"
+                key={item.id}
+              >
                 {lan === "es" ? item.title : item.title_eng}
               </Link>
             ))}
           </div>
         </div>
-
-        <div className="w-full h-screen bg-black">{isLoading ? <BeatLoader /> : <img src={src} className="fade-in h-full w-full object-cover" />}</div>
+        <div className="w-full h-screen flex items-center justify-center bg-gray-200">
+          {isLoading ? (
+            <BeatLoader />
+          ) : (
+            <img
+              src={imageSrc}
+              className="fade-in h-full w-full object-cover"
+              alt="Hero image"
+            />
+          )}
+        </div>
       </section>
     </Layout>
   );
