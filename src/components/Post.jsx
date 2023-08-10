@@ -155,7 +155,7 @@ const Post = () => {
           {loadingImages ? (
             <Loader />
           ) : (
-            dataImages &&
+            data &&
             dataImages.map((item, index) => {
               return (
                 <div

@@ -6,17 +6,16 @@ import List from './List'
 import Item from './ItemMain'
 
 const Creaciones = () => {
-  const { lan } = useDataContext()
-  const [categorie, setCategorie] = useState(0)
+  const { lan, category, setCategory } = useDataContext()
 
   useEffect(() => {
-    if (categorie === 0) return
+    if (category === 0) return
     const targetElement = document.querySelector('#list')
     window.scrollTo({
       top: targetElement.offsetTop - 100,
       behavior: 'smooth',
     })
-  }, [categorie])
+  }, [category])
 
   return (
     <section className='px-12 py-28'>
@@ -36,13 +35,13 @@ const Creaciones = () => {
           <Item
             key={item.id}
             data={item}
-            categorie={categorie}
-            setCategorie={setCategorie}
+            categorie={category}
+            setCategorie={setCategory}
           />
         ))}
       </div>
 
-      {categorie !== 0 && <List categorie={categorie} />}
+      {category !== 0 && <List categorie={category} />}
     </section>
   )
 }

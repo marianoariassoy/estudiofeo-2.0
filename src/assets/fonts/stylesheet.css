@@ -1,55 +1,55 @@
 @font-face {
   font-display: swap;
-  font-family: "Standerd Bold";
+  font-family: 'Standerd Bold';
   font-style: normal;
   font-weight: bold;
-  src: url("Standerd-Bold.woff2") format("woff2"), url("Standerd-Bold.woff") format("woff");
+  src: url('Standerd-Bold.woff2') format('woff2');
 }
 
 @font-face {
   font-display: swap;
-  font-family: "Standerd Light";
+  font-family: 'Standerd Light';
   font-style: normal;
   font-weight: 300;
-  src: url("Standerd-Light.woff2") format("woff2"), url("Standerd-Light.woff") format("woff");
+  src: url('Standerd-Light.woff2') format('woff2');
 }
 
 @font-face {
   font-display: swap;
-  font-family: "Standerd ExtraBold";
+  font-family: 'Standerd ExtraBold';
   font-style: normal;
   font-weight: bold;
-  src: url("Standerd-ExtraBold.woff2") format("woff2"), url("Standerd-ExtraBold.woff") format("woff");
+  src: url('Standerd-ExtraBold.woff2') format('woff2');
 }
 
 @font-face {
   font-display: swap;
-  font-family: "Standerd Medium";
+  font-family: 'Standerd Medium';
   font-style: normal;
   font-weight: 500;
-  src: url("Standerd-Medium.woff2") format("woff2"), url("Standerd-Medium.woff") format("woff");
+  src: url('Standerd-Medium.woff2') format('woff2');
 }
 
 @font-face {
   font-display: swap;
-  font-family: "Standerd";
+  font-family: 'Standerd';
   font-style: normal;
   font-weight: normal;
-  src: url("Standerd-Regular.woff2") format("woff2"), url("Standerd-Regular.woff") format("woff");
+  src: url('Standerd-Regular.woff2') format('woff2');
 }
 
 @font-face {
   font-display: swap;
-  font-family: "Bodoni Moda";
+  font-family: 'Bodoni Moda';
   font-style: italic;
   font-weight: 500;
-  src: url("BodoniModa28pt-MediumItalic.woff2") format("woff2"), url("BodoniModa28pt-MediumItalic.woff") format("woff");
+  src: url('BodoniModa28pt-MediumItalic.woff2') format('woff2');
 }
 
 @font-face {
   font-display: swap;
-  font-family: "Brodaers Expanded Round";
+  font-family: 'Brodaers Expanded Round';
   font-style: normal;
   font-weight: normal;
-  src: url("MBFDanomo.woff2") format("woff2"), url("MBFDanomo.woff") format("woff");
+  src: url('MBFDanomo.woff2') format('woff2');
 }
