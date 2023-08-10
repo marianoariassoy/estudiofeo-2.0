@@ -90,3 +90,24 @@ export const languages = [
     title: 'es',
   },
 ]
+
+export const contact = {
+  es: {
+    name: 'NOMBRE Y APELLIDO',
+    email: 'CORREO ELECTRÓNICO',
+    message: 'MENSAJE',
+    send: 'ENVIAR',
+    thanks: '¡Gracias por contactarte con nosotros!',
+    error: 'Se produjo un error al enviar el mensaje :-(',
+    required: '¡Ups! tenes que completar este campo',
+  },
+  en: {
+    name: 'NAME AND SURNAME',
+    email: 'EMAIL ADDRESS',
+    message: 'MESSAGE',
+    send: 'SEND',
+    thanks: 'Thanks for contacting us!',
+    error: 'An error occurred while sending the message :-(',
+    required: 'You have to complete this field',
+  },
+}
